@@ -23,8 +23,16 @@ jobs:
   #----------------------------------------------------------------------
   # Tests
   #----------------------------------------------------------------------
+  - script: ls -al /home/vsts/
+    displayName: 'DEBUG: show /home/vsts/'
+    - script: ls -al /home/vsts/.npm/
+    displayName: 'DEBUG: show /home/vsts/.npm/'
   - script: ls -al /home/vsts/.npm/_cacache/
     displayName: 'DEBUG: show /home/vsts/.npm/_cacache/'
+  - script: ls -al /home/vsts/.npm/_cacache/index-v5
+    displayName: 'DEBUG: show /home/vsts/.npm/_cacache/index-v5/'
+  - script: ls -al /home/vsts/.npm/_cacache/index-v5/30
+    displayName: 'DEBUG: show /home/vsts/.npm/_cacache/index-v5/30'
   - script: npm install
     displayName: 'INSTALL: launch npm install'
   - script: |
