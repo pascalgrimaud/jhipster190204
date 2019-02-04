@@ -25,7 +25,7 @@ jobs:
   #----------------------------------------------------------------------
   - script: ls -al /home/vsts/
     displayName: 'DEBUG: show /home/vsts/'
-    - script: ls -al /home/vsts/.npm/
+  - script: ls -al /home/vsts/.npm/
     displayName: 'DEBUG: show /home/vsts/.npm/'
   - script: ls -al /home/vsts/.npm/_cacache/
     displayName: 'DEBUG: show /home/vsts/.npm/_cacache/'
