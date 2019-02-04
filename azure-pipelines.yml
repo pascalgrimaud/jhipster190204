@@ -23,6 +23,8 @@ jobs:
   #----------------------------------------------------------------------
   # Tests
   #----------------------------------------------------------------------
+  - script: ls -al /home/vsts/.npm/_cacache/
+    displayName: 'DEBUG: show /home/vsts/.npm/_cacache/'
   - script: npm install
     displayName: 'INSTALL: launch npm install'
   - script: |
