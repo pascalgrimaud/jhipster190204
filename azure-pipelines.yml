@@ -23,6 +23,8 @@ jobs:
   #----------------------------------------------------------------------
   # Tests
   #----------------------------------------------------------------------
+  - script: sudo chown -R vsts:docker /home/vsts/.npm/
+    displayName: 'DEBUG: change vsts permission'
   - script: ls -al /home/vsts/
     displayName: 'DEBUG: show /home/vsts/'
   - script: ls -al /home/vsts/.npm/
